@@ -15,12 +15,11 @@ public class LogoutTest extends BaseTest {
     @Test()
     public void logoutTest() {
         ProductsPage productsPage = new ProductsPage(driver);
+        Assert.assertEquals(productsPage.getTitle(), ProductsPageTitle);
         productsPage.clickMenu();
         MenuPage menuPage = new MenuPage(driver);
-        menuPage.clickLogoutSidebarLink();
-      /*  Assert.assertEquals(productsPage.getTitle(), ProductsPageTitle);
-        LoginPage = new LoginPage(driver);
-        boolean isLoginWrapperDisplayed = loginPage.getLoginWrapper().isDisplayed();
-        Assert.assertTrue(isLoginWrapperDisplayed, "Login wrapper is not displayed");*/
+        menuPage.clickLogout();
+        LoginPage loginPage = new LoginPage(driver);
+        Assert.assertTrue(loginPage.isDisplayed());
     }
 }
