@@ -4,8 +4,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.basePage.BasePage;
 
-public class LoginPage {
+public class LoginPage extends BasePage {
 
     @FindBy(id = "user-name")
     private WebElement usernameField;
@@ -17,6 +18,7 @@ public class LoginPage {
     private WebElement loginButton;
 
     public LoginPage(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
