@@ -1,8 +1,6 @@
 package com.globant.tests;
 
-import com.globant.pages.CheckOutStepOnePage;
-import com.globant.pages.ProductsPage;
-import com.globant.pages.YourCartPage;
+import com.globant.pages.*;
 import org.testng.annotations.Test;
 import org.testng.Assert;
 
@@ -11,7 +9,7 @@ import utils.baseTest.BaseTest;
 public class PurchaseProductTest extends BaseTest {
 
     private String PRODUCTS_PAGE_TITLE = "Products";
-
+    private String CHECKOUT_COMPLETE_HEADER = "Thank you for your order!";
 
 
     @Test()
@@ -27,7 +25,10 @@ public class PurchaseProductTest extends BaseTest {
         checkOutStepOnePage.enterLastName("Doe");
         checkOutStepOnePage.enterPostalCode("12345");
         checkOutStepOnePage.clickContinue();
-        //checkout step one page
 
+        CheckOutStepTwoPage checkOutStepTwoPage = new CheckOutStepTwoPage(driver);
+        checkOutStepTwoPage.clickFinishButton();
+        CheckOutCompletePage checkOutCompletePage = new CheckOutCompletePage(driver);
+        Assert.assertEquals(CHECKOUT_COMPLETE_HEADER, checkOutCompletePage.getCompleteHeader());
     }
 }

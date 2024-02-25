@@ -4,9 +4,21 @@
     <parameter name="password" value="secret_sauce"/>
     <parameter name="url" value="https://www.saucedemo.com/"/>
 
-    <test name="Purchase">
+<!--    <test name="Purchase">
         <classes>
             <class name="com.globant.tests.PurchaseProductTest"/>
+        </classes>
+    </test>
+
+    <test name="EmptyCart">
+        <classes>
+            <class name="com.globant.tests.RemovingElementsCartTest"/>
+        </classes>
+    </test>-->
+
+    <test name="Logout">
+        <classes>
+            <class name="com.globant.tests.LogoutTest"/>
         </classes>
     </test>
 

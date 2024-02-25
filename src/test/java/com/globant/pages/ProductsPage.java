@@ -5,12 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
 import org.openqa.selenium.support.PageFactory;
+import utils.basePage.BasePage;
 
 import java.sql.Driver;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
-public class ProductsPage {
-    /*    @FindBy(css = "\".btn.btn_primary.btn_small.btn_inventory\"")*/
+public class ProductsPage extends BasePage {
+
+    private Set<Integer> listUsedRandomNumbers = new HashSet<>();
     @FindBy(css = ".btn.btn_primary.btn_small.btn_inventory")
     private List<WebElement> buttonsAddToCart;
 
@@ -24,6 +28,7 @@ public class ProductsPage {
     private WebElement buttonShoppingCart;
 
     public ProductsPage(WebDriver driver) {
+        super(driver);
         PageFactory.initElements(driver, this);
     }
 
@@ -32,7 +37,12 @@ public class ProductsPage {
     }
 
     public void addRandomProductToCart() {
+
         int random = (int) (Math.random() * buttonsAddToCart.size());
+        while (listUsedRandomNumbers.contains(random)) {
+            random = (int) (Math.random() * buttonsAddToCart.size());
+        }
+        listUsedRandomNumbers.add(random);
         buttonsAddToCart.get(random).click();
     }
 
