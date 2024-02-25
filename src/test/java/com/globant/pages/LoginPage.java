@@ -8,6 +8,9 @@ import utils.basePage.BasePage;
 
 public class LoginPage extends BasePage {
 
+    @FindBy(className = "login_wrapper-inner")
+    private WebElement loginWrapper;
+
     @FindBy(id = "user-name")
     private WebElement usernameField;
 
@@ -32,5 +35,9 @@ public class LoginPage extends BasePage {
 
     public void clickLogin() {
         loginButton.click();
+    }
+
+    public WebElement getLoginWrapper() {
+        return loginWrapper;
     }
 }

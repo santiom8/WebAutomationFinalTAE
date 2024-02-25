@@ -1,27 +1,23 @@
 package com.globant.pages;
 
-import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
+import java.util.Optional;
 
 public class YourCartPage {
 
-    //validate existance of the products in the cart
-    //validate title
-    //validate checkout button
-    //validate remove button
-    @FindBy(className = "title")
-    private WebElement title;
+    //list of products in the cart
+    @FindBy(css = ".btn.btn_secondary.btn_small.cart_button")
+    private List<WebElement> listButtonsCart;
 
+    //Button to checkout
     @FindBy(id="checkout")
     private WebElement checkoutButton;
 
-    @FindBy(className="cart_item")
-    private List<WebElement> cartItemList;
 
     //constructor
     public YourCartPage(WebDriver driver) {
@@ -31,4 +27,19 @@ public class YourCartPage {
     public void clickCheckout(){
         checkoutButton.click();
     }
+
+    public void removeProductsFromCart(){
+        Optional<WebElement> currentProductOptional = listButtonsCart.stream().findFirst();
+        if (currentProductOptional.isPresent()) {
+            WebElement currentProduct = currentProductOptional.get();
+            currentProduct.click();
+            listButtonsCart.remove(currentProduct);
+        }
+    }
+
+    public Integer getListProductsInCartSize(){
+        return listButtonsCart.size();
+    }
+
+
 }

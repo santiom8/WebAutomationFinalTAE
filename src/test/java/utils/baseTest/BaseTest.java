@@ -37,7 +37,7 @@ public class BaseTest {
     //load the initial page
 
 
-  /*  @AfterMethod()
+ /*   @AfterMethod()
     public void afterMethod() {
         driver.close();
     }*/
