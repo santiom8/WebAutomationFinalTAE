@@ -2,14 +2,16 @@ package utils.baseTest;
 
 import com.globant.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import utils.SetDriver;
 
-public class BaseTest {
+import java.time.Duration;
 
+public class BaseTest {
+    protected WebDriverWait wait;
 
     protected WebDriver driver;
     protected LoginPage loginPage;
@@ -17,11 +19,9 @@ public class BaseTest {
     @BeforeMethod(alwaysRun = true)
     @Parameters({"username", "password", "url"})
     public void beforeMethod(String username, String password, String url) {
-      /*  System.setProperty("webdriver.chrome.driver", "C:\\Users\\santi\\IdeaProjects\\webAutomationPractice\\src\\test\\resources\\chromedriver.exe");
-        driver = new ChromeDriver();*/
         SetDriver setDriver = new SetDriver();
+        wait = new WebDriverWait(setDriver.getDriver(), Duration.ofSeconds(20));
         driver = setDriver.getDriver();
-/*        driver = initDriver.getDriver();*/
         navigateTo(url);
         driver.manage().window().maximize();
         loginPage = new LoginPage(driver);
@@ -34,11 +34,8 @@ public class BaseTest {
         driver.get(url);
     }
 
-    //load the initial page
-
-
- /*   @AfterMethod()
+    @AfterMethod()
     public void afterMethod() {
         driver.close();
-    }*/
+    }
 }

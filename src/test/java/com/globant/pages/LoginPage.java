@@ -40,4 +40,8 @@ public class LoginPage extends BasePage {
     public WebElement getLoginWrapper() {
         return loginWrapper;
     }
+
+    public boolean isDisplayed() {
+        return getLoginWrapper().isDisplayed();
+    }
 }

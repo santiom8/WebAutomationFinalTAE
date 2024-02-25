@@ -1,17 +1,17 @@
 package utils.basePage;
 
-import com.globant.pages.MenuPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
 public class BasePage {
 
-    @FindBy(id = "react-burger-menu-btn")
+    @FindBy(className = "bm-burger-button")
     protected WebElement menu;
 
     protected WebDriver driver;
@@ -34,4 +34,10 @@ public class BasePage {
     public void clickMenu() {
         menu.click();
     }
+
+    public void clickElementSafe(WebElement element){
+        getWait().until(ExpectedConditions.elementToBeClickable(element));
+        element.click();
+    }
+
 }
