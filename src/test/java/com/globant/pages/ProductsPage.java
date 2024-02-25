@@ -36,8 +36,8 @@ public class ProductsPage {
         buttonsAddToCart.get(random).click();
     }
 
-    public WebElement getTitle() {
-        return title;
+    public String getTitle() {
+        return title.getText();
     }
 
     public WebElement getShoppingCartBadge() {
@@ -47,5 +47,4 @@ public class ProductsPage {
     public void clickShoppingCart() {
         buttonShoppingCart.click();
     }
-
 }

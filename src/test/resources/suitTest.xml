@@ -1,0 +1,13 @@
+<suite name="SauceDemoTests">
+
+    <parameter name="username" value="standard_user"/>
+    <parameter name="password" value="secret_sauce"/>
+    <parameter name="url" value="https://www.saucedemo.com/"/>
+
+    <test name="Purchase">
+        <classes>
+            <class name="com.globant.tests.PurchaseProductTest"/>
+        </classes>
+    </test>
+
+</suite>
