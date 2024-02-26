@@ -9,11 +9,18 @@ public class CheckOutStepTwoPage extends BasePage {
     @FindBy(id = "finish")
     private WebElement finishButton;
 
+    @FindBy(className = "title")
+    private WebElement title;
+
     public CheckOutStepTwoPage(WebDriver driver) {
         super(driver);
     }
 
     public void clickFinishButton() {
         finishButton.click();
+    }
+
+    public String getTitle() {
+        return title.getText();
     }
 }

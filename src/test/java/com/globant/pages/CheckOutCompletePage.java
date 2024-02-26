@@ -13,7 +13,7 @@ public class CheckOutCompletePage extends BasePage {
         super(driver);
     }
 
-    public String getCompleteHeader() {
+    public String getTitle() {
         return completeHeader.getText();
     }
 }

@@ -15,6 +15,9 @@ public class CheckOutStepOnePage extends BasePage {
     @FindBy(id = "continue")
     private WebElement continueButton;
 
+    @FindBy(className = "title")
+    private WebElement title;
+
 
     public CheckOutStepOnePage(WebDriver driver) {
         super(driver);
@@ -34,6 +37,10 @@ public class CheckOutStepOnePage extends BasePage {
 
     public void clickContinue() {
         continueButton.click();
+    }
+
+    public String getTitle() {
+        return title.getText();
     }
 
 }
