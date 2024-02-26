@@ -14,6 +14,9 @@ public class YourCartPage {
     @FindBy(css = ".btn.btn_secondary.btn_small.cart_button")
     private List<WebElement> listButtonsCart;
 
+    @FindBy(className = "title")
+    private WebElement title;
+
     //Button to checkout
     @FindBy(id="checkout")
     private WebElement checkoutButton;
@@ -41,5 +44,7 @@ public class YourCartPage {
         return listButtonsCart.size();
     }
 
-
+    public String getTitle() {
+        return title.getText();
+    }
 }

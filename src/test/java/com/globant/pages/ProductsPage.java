@@ -52,11 +52,13 @@ public class ProductsPage extends BasePage {
         return title.getText();
     }
 
-    public WebElement getShoppingCartBadge() {
-        return shoppingCartBadgeValue;
+    public int getShoppingCartBadge() {
+        return Integer.parseInt(shoppingCartBadgeValue.getText());
     }
 
     public void clickShoppingCart() {
         buttonShoppingCart.click();
     }
+
+
 }
