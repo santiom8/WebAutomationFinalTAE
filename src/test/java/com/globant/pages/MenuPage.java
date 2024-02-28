@@ -18,7 +18,6 @@ public class MenuPage extends BasePage {
 
     public MenuPage(WebDriver driver) {
         super(driver);
-        PageFactory.initElements(driver, this);
     }
 
     @Override

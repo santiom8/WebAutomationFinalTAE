@@ -1,0 +1,105 @@
+2024-02-27 18:54:03.465 [main] DEBUG com.globant.App - We've just greeted the user!
+2024-02-27 18:54:03.468 [main] INFO  com.globant.App - We've just greeted the user!
+2024-02-27 18:54:03.468 [main] WARN  com.globant.App - We've just greeted the user!
+2024-02-27 18:54:03.468 [main] ERROR com.globant.App - We've just greeted the user!
+2024-02-27 18:54:03.468 [main] FATAL com.globant.App - We've just greeted the user!
+2024-02-27 18:54:21.908 [main] DEBUG com.globant.App - We've just greeted the user!
+2024-02-27 18:54:21.911 [main] INFO  com.globant.App - We've just greeted the user!
+2024-02-27 18:54:21.911 [main] WARN  com.globant.App - We've just greeted the user!
+2024-02-27 18:54:21.911 [main] ERROR com.globant.App - We've just greeted the user!
+2024-02-27 18:54:21.911 [main] FATAL com.globant.App - We've just greeted the user!
+2024-02-27 18:55:22.736 [main] INFO  utils.baseTest.BaseTest - We've just greeted the user!
+2024-02-27 18:55:22.760 [main] INFO  utils.baseTest.BaseTest - te amo
+2024-02-27 19:02:33.003 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:02:33.076 [main] INFO  utils.baseTest.BaseTest - Select product randomly added to the cart
+2024-02-27 19:02:33.102 [main] INFO  utils.baseTest.BaseTest - The product was added to the cart
+2024-02-27 19:02:33.173 [main] INFO  utils.baseTest.BaseTest - Your cart page was loaded successfully
+2024-02-27 19:02:33.246 [main] INFO  utils.baseTest.BaseTest - The checkout step one page was loaded successfully
+2024-02-27 19:02:33.531 [main] INFO  utils.baseTest.BaseTest - The checkout step two page was loaded successfully
+2024-02-27 19:02:33.599 [main] INFO  utils.baseTest.BaseTest - The checkout complete page was loaded successfully
+2024-02-27 19:02:35.725 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:02:35.912 [main] INFO  utils.baseTest.BaseTest - The 3 products were added to the cart
+2024-02-27 19:02:36.134 [main] INFO  utils.baseTest.BaseTest - The 3 products were removed from the cart
+2024-02-27 19:02:38.195 [main] INFO  utils.baseTest.BaseTest - Click on menu and wait for the menu to be displayed
+2024-02-27 19:02:38.886 [main] INFO  utils.baseTest.BaseTest - Click on logout
+2024-02-27 19:02:38.909 [main] INFO  utils.baseTest.BaseTest - Logging out successfully, the login page is displayed
+2024-02-27 19:04:18.697 [main] INFO  utils.baseTest.BaseTest - Running purchase test...
+2024-02-27 19:04:18.734 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:04:18.801 [main] INFO  utils.baseTest.BaseTest - Select product randomly added to the cart
+2024-02-27 19:04:18.823 [main] INFO  utils.baseTest.BaseTest - The product was added to the cart
+2024-02-27 19:04:18.893 [main] INFO  utils.baseTest.BaseTest - Your cart page was loaded successfully
+2024-02-27 19:04:18.959 [main] INFO  utils.baseTest.BaseTest - The checkout step one page was loaded successfully
+2024-02-27 19:04:19.242 [main] INFO  utils.baseTest.BaseTest - The checkout step two page was loaded successfully
+2024-02-27 19:04:19.308 [main] INFO  utils.baseTest.BaseTest - The checkout complete page was loaded successfully
+2024-02-27 19:04:21.402 [main] INFO  utils.baseTest.BaseTest - Running remove item cart test...
+2024-02-27 19:04:21.429 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:04:21.626 [main] INFO  utils.baseTest.BaseTest - The 3 products were added to the cart
+2024-02-27 19:04:21.844 [main] INFO  utils.baseTest.BaseTest - The 3 products were removed from the cart
+2024-02-27 19:04:23.869 [main] INFO  utils.baseTest.BaseTest - Running logout test...
+2024-02-27 19:04:23.899 [main] INFO  utils.baseTest.BaseTest - Click on menu and wait for the menu to be displayed
+2024-02-27 19:04:24.596 [main] INFO  utils.baseTest.BaseTest - Click on logout
+2024-02-27 19:04:24.620 [main] INFO  utils.baseTest.BaseTest - Logging out successfully, the login page is displayed
+2024-02-27 19:05:16.052 [main] INFO  utils.baseTest.BaseTest - Running purchase test.............
+2024-02-27 19:05:16.091 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:05:16.159 [main] INFO  utils.baseTest.BaseTest - Select product randomly added to the cart
+2024-02-27 19:05:16.181 [main] INFO  utils.baseTest.BaseTest - The product was added to the cart
+2024-02-27 19:05:16.252 [main] INFO  utils.baseTest.BaseTest - Your cart page was loaded successfully
+2024-02-27 19:05:16.319 [main] INFO  utils.baseTest.BaseTest - The checkout step one page was loaded successfully
+2024-02-27 19:05:16.604 [main] INFO  utils.baseTest.BaseTest - The checkout step two page was loaded successfully
+2024-02-27 19:05:16.673 [main] INFO  utils.baseTest.BaseTest - The checkout complete page was loaded successfully
+2024-02-27 19:05:18.680 [main] INFO  utils.baseTest.BaseTest - Running remove item cart test.............
+2024-02-27 19:05:18.710 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:05:18.910 [main] INFO  utils.baseTest.BaseTest - The 3 products were added to the cart
+2024-02-27 19:05:19.131 [main] INFO  utils.baseTest.BaseTest - The 3 products were removed from the cart
+2024-02-27 19:05:21.109 [main] INFO  utils.baseTest.BaseTest - Running logout test.............
+2024-02-27 19:05:21.138 [main] INFO  utils.baseTest.BaseTest - Click on menu and wait for the menu to be displayed
+2024-02-27 19:05:21.821 [main] INFO  utils.baseTest.BaseTest - Click on logout
+2024-02-27 19:05:21.845 [main] INFO  utils.baseTest.BaseTest - Logging out successfully, the login page is displayed
+2024-02-27 19:05:59.092 [main] INFO  utils.baseTest.BaseTest - Running purchase test.............
+2024-02-27 19:05:59.132 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:05:59.204 [main] INFO  utils.baseTest.BaseTest - Select product randomly added to the cart
+2024-02-27 19:05:59.227 [main] INFO  utils.baseTest.BaseTest - The product was added to the cart
+2024-02-27 19:05:59.300 [main] INFO  utils.baseTest.BaseTest - Your cart page was loaded successfully
+2024-02-27 19:05:59.368 [main] INFO  utils.baseTest.BaseTest - The checkout step one page was loaded successfully
+2024-02-27 19:05:59.659 [main] INFO  utils.baseTest.BaseTest - The checkout step two page was loaded successfully
+2024-02-27 19:05:59.727 [main] INFO  utils.baseTest.BaseTest - The checkout complete page was loaded successfully
+2024-02-27 19:06:01.846 [main] INFO  utils.baseTest.BaseTest - Running remove item cart test.............
+2024-02-27 19:06:01.877 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:06:02.062 [main] INFO  utils.baseTest.BaseTest - The 3 products were added to the cart
+2024-02-27 19:06:02.277 [main] INFO  utils.baseTest.BaseTest - The 3 products were removed from the cart
+2024-02-27 19:06:04.349 [main] INFO  utils.baseTest.BaseTest - Running logout test.............
+2024-02-27 19:06:04.377 [main] INFO  utils.baseTest.BaseTest - Click on menu and wait for the menu to be displayed
+2024-02-27 19:06:05.091 [main] INFO  utils.baseTest.BaseTest - Click on logout
+2024-02-27 19:06:05.114 [main] INFO  utils.baseTest.BaseTest - Logging out successfully, the login page is displayed
+2024-02-27 19:07:29.912 [main] INFO  utils.baseTest.BaseTest - Running purchase test.............
+2024-02-27 19:07:29.951 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:07:30.019 [main] INFO  utils.baseTest.BaseTest - Select product randomly added to the cart
+2024-02-27 19:07:30.041 [main] INFO  utils.baseTest.BaseTest - The product was added to the cart
+2024-02-27 19:07:30.117 [main] INFO  utils.baseTest.BaseTest - Your cart page was loaded successfully
+2024-02-27 19:07:30.185 [main] INFO  utils.baseTest.BaseTest - The checkout step one page was loaded successfully
+2024-02-27 19:07:30.481 [main] INFO  utils.baseTest.BaseTest - The checkout step two page was loaded successfully
+2024-02-27 19:07:30.550 [main] INFO  utils.baseTest.BaseTest - The checkout complete page was loaded successfully
+2024-02-27 19:07:32.667 [main] INFO  utils.baseTest.BaseTest - Running remove item cart test.............
+2024-02-27 19:07:32.699 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:07:32.892 [main] INFO  utils.baseTest.BaseTest - The 3 products were added to the cart
+2024-02-27 19:07:33.111 [main] INFO  utils.baseTest.BaseTest - The 3 products were removed from the cart
+2024-02-27 19:07:35.190 [main] INFO  utils.baseTest.BaseTest - Running logout test.............
+2024-02-27 19:07:35.221 [main] INFO  utils.baseTest.BaseTest - Click on menu and wait for the menu to be displayed
+2024-02-27 19:07:35.914 [main] INFO  utils.baseTest.BaseTest - Click on logout
+2024-02-27 19:07:35.936 [main] INFO  utils.baseTest.BaseTest - Logging out successfully, the login page is displayed
+2024-02-27 19:08:46.825 [main] INFO  utils.baseTest.BaseTest - Running purchase test.............
+2024-02-27 19:08:46.868 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:08:46.932 [main] INFO  utils.baseTest.BaseTest - Select product randomly added to the cart
+2024-02-27 19:08:46.954 [main] INFO  utils.baseTest.BaseTest - The product was added to the cart
+2024-02-27 19:08:47.027 [main] INFO  utils.baseTest.BaseTest - Your cart page was loaded successfully
+2024-02-27 19:08:47.093 [main] INFO  utils.baseTest.BaseTest - The checkout step one page was loaded successfully
+2024-02-27 19:08:47.387 [main] INFO  utils.baseTest.BaseTest - The checkout step two page was loaded successfully
+2024-02-27 19:08:47.461 [main] INFO  utils.baseTest.BaseTest - The checkout complete page was loaded successfully
+2024-02-27 19:08:49.493 [main] INFO  utils.baseTest.BaseTest - Running remove item cart test.............
+2024-02-27 19:08:49.522 [main] INFO  utils.baseTest.BaseTest - The products page was loaded successfully
+2024-02-27 19:08:49.721 [main] INFO  utils.baseTest.BaseTest - The 3 products were added to the cart
+2024-02-27 19:08:49.942 [main] INFO  utils.baseTest.BaseTest - The 3 products were removed from the cart
+2024-02-27 19:08:51.902 [main] INFO  utils.baseTest.BaseTest - Running logout test.............
+2024-02-27 19:08:51.928 [main] INFO  utils.baseTest.BaseTest - Click on menu and wait for the menu to be displayed
+2024-02-27 19:08:52.613 [main] INFO  utils.baseTest.BaseTest - Click on logout
+2024-02-27 19:08:52.636 [main] INFO  utils.baseTest.BaseTest - Logging out successfully, the login page is displayed

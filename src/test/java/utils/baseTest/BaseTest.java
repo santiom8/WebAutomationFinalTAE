@@ -1,6 +1,8 @@
 package utils.baseTest;
 
 import com.globant.pages.LoginPage;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
@@ -15,6 +17,7 @@ public class BaseTest {
 
     protected WebDriver driver;
     protected LoginPage loginPage;
+    protected static final Logger logger = LogManager.getLogger(BaseTest.class);
 
     @BeforeMethod(alwaysRun = true)
     @Parameters({"username", "password", "url"})

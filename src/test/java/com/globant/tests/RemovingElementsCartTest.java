@@ -11,13 +11,16 @@ import utils.baseTest.BaseTest;
 public class RemovingElementsCartTest extends BaseTest {
     @Test
     public void removeItemCartTest() {
+        logger.info("Running remove item cart test.............");
         //Products page
         ProductsPage productsPage = new ProductsPage(driver);
         Assert.assertEquals(productsPage.getTitle(), PageElementsEnum.PRODUCTS_PAGE_TITLE.getTitle());
+        logger.info("The products page was loaded successfully");
         productsPage.addRandomProductToCart();
         productsPage.addRandomProductToCart();
         productsPage.addRandomProductToCart();
         Assert.assertEquals(productsPage.getShoppingCartBadge(), PageElementsQuantityEnums.QUANTITY_PRODUCTS_ADDED.getValue());
+        logger.info("The 3 products were added to the cart");
         productsPage.clickShoppingCart();
 
         //Your Cart page
@@ -27,5 +30,6 @@ public class RemovingElementsCartTest extends BaseTest {
         yourCartPage.removeProductsFromCart();
          yourCartPage.removeProductsFromCart();
         Assert.assertEquals((int) yourCartPage.getListProductsInCartSize(), PageElementsQuantityEnums.QUANTITY_PRODUCTS_AFTER_REMOVE.getValue());
+        logger.info("The 3 products were removed from the cart");
     }
 }

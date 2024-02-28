@@ -4,11 +4,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utils.basePage.BasePage;
 
 import java.util.List;
 import java.util.Optional;
 
-public class YourCartPage {
+public class YourCartPage extends BasePage {
 
     //list of products in the cart
     @FindBy(css = ".btn.btn_secondary.btn_small.cart_button")
@@ -18,20 +19,20 @@ public class YourCartPage {
     private WebElement title;
 
     //Button to checkout
-    @FindBy(id="checkout")
+    @FindBy(id = "checkout")
     private WebElement checkoutButton;
 
 
     //constructor
     public YourCartPage(WebDriver driver) {
-        PageFactory.initElements(driver, this);
+        super(driver);
     }
 
-    public void clickCheckout(){
+    public void clickCheckout() {
         checkoutButton.click();
     }
 
-    public void removeProductsFromCart(){
+    public void removeProductsFromCart() {
         Optional<WebElement> currentProductOptional = listButtonsCart.stream().findFirst();
         if (currentProductOptional.isPresent()) {
             WebElement currentProduct = currentProductOptional.get();
@@ -40,7 +41,7 @@ public class YourCartPage {
         }
     }
 
-    public Integer getListProductsInCartSize(){
+    public Integer getListProductsInCartSize() {
         return listButtonsCart.size();
     }
 
